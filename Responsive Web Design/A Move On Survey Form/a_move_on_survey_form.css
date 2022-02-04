@@ -1,0 +1,82 @@
+html{
+	font-size: 15px;
+}
+
+body {
+	font-family: papyrus, 'Courier New', Courier, monospace;
+	background: url(https://i.imgur.com/wBLQQz7.jpg);
+}
+
+.container {
+	display: grid;
+	width: 100%;
+	height: 1400px;
+	grid-template-columns: 1fr 800px 1fr;
+	grid-template-rows: 180px 800px 1fr;
+	grid-gap: 0.5rem;
+	grid-template-areas:
+	"header header header"
+	"espace-vide form espace-vide-2"
+	"espace-vide form espace-vide-2";
+}
+  
+.header {
+	grid-area: header;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 0.7;
+}
+
+h1 {
+	font-family: Harrington, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 4rem;
+	text-align: center;
+}
+
+p {
+	font-size: 2rem;
+	text-align: center;
+}
+  
+.form {
+	grid-area: form;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	width: auto;
+}
+
+fieldset {
+	background: hsla(0, 100%, 50%, 0.4);
+	border-radius: 20px;
+	box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=number], select, textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button[type=submit] {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 4px;
+}

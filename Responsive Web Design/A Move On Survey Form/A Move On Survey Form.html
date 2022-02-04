@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Form is a Form</title>
+	<link rel="stylesheet" type="text/css" href="a_move_on_survey_form.css">
+</head>
+<body>
+	<div id="main">
+		<div class="container">
+			<div class="header">
+				<h1 id="title">A Move On Customer Satisfaction Survey</h1>
+				<p id="description">Thank you for taking the time to help us improve our services</p>
+			</div>
+			<div class="form">
+				<form action="" method="post" id="survey-form"> <!-- style="background: hsla(0, 100%, 50%, 0.4); border-radius: 20px;" -->
+					<fieldset>
+						<div>
+							<label for="name" id="name-label" class="bold">First Name:</label>
+							<br>
+							<input type="text" name="name" id="name" required placeholder="Enter your first name">
+						</div>
+						<div>
+							<label for="lastname" class="bold">Last Name:</label>
+							<br>
+							<input type="text" name="lastname" id="lastname" required placeholder="Enter your last name">
+						</div>
+						<div>
+							<label for="email" id="email-label" class="bold">Email:</label>
+							<br>
+						   <input type="email" name="email" id="email" required placeholder="Enter your email">
+						</div>
+						<div>
+							<label for="number" id="number-label" class="bold">Age:</label>
+							<br>
+							<input type="number" name="age" id="number" placeholder="Enter your age" min="18" max="120">
+						</div>
+						<div class="custom-select">
+							<label for="dropdown" class="bold">How would you rate your overall satisfaction?</label>
+							<br>
+							<select name="dropdown" id="dropdown">
+								<option value="0">Rate your overall level of satisfaction</option>
+								<option value="1">Very satisfied</option>
+								<option value="2">Quite satisfied</option>
+								<option value="3">Unsatisfied</option>
+								<option value="4">Totally unsatisfied</option>
+								<option value="5">Prefer not to say</option>
+							</select>
+						</div>
+						<div>
+							<label class="bold">Would you recommend A Move On to a friend?</label>
+						</div>
+						<div>
+							<input type="radio" name="recommend" id="definitely" value="recommend" checked> <!-- la valeur 'radio' implique qu'un seul choix est possible, contrairement à la valeur 'checkbox' -->
+							<label for="definitely">Definitely</label>
+						</div>
+						<div>
+							<input type="radio" name="recommend" id="maybe" value="maybe">
+							<label for="maybe">Maybe</label>
+						</div>
+						<div>
+							<input type="radio" name="recommend" id="not_sure" value="not_sure">
+							<label for="not_sure">Not sure</label>
+						</div>
+						<div class="custom-select">
+							<label for="discover" class="bold">How did you discover A Move On?</label>
+							<br>
+							<select name="discover" id="discover">
+								<option value="0">Select an option</option>
+								<option value="1">Search Engines</option>
+								<option value="2">Recommendations</option>
+								<option value="3">Social Media</option>
+								<option value="4">Others</option>
+							</select>
+						</div>
+						<div>
+							<label class="bold">What would you like to see improved in our aircrafts? (Check all that apply)</label>
+						</div>
+						<div>
+							<input type="checkbox" name="improve" id="path-choice" value="path-choice">
+							<label for="path-choice">The choice of the paths</label>
+						</div>
+						<div>
+							<input type="checkbox" name="improve" id="stability" value="stability">
+							<label for="stability">The stability of the longitudinal axis</label>
+						</div>
+						<div>
+							<input type="checkbox" name="improve" id="thermal-resistance" value="thermal-resistance">
+							<label for="thermal-resistance">The thermal resistance of the cabin</label>
+						</div>
+						<div>
+							<input type="checkbox" name="improve" id="wing-length" value="wing-length">
+							<label for="wing-length">The length of the wings</label>
+						</div>
+						<div>
+							<input type="checkbox" name="improve" id="tire-pressure" value="tire-pressure">
+							<label for="tire-pressure">The level of pressure of the tires</label>
+						</div>
+						<div>
+							<input type="checkbox" name="improve" id="politeness" value="politeness">
+							<label for="politeness">The politeness of our staff</label>
+						</div>
+						<div>
+							<label for="message" class="bold">Any comments or suggestions?</label>
+							<br>
+							<textarea name="message" id="message" rows="10" placeholder="Enter your suggestions here..."></textarea>
+						</div>
+						<div>
+							<button type="submit" id="submit" value="Submit">Submit</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

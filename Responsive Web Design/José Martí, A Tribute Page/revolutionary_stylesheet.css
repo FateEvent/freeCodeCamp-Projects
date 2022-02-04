@@ -1,0 +1,110 @@
+html{
+  font-size: 15px;
+}
+
+body {
+  font-family: papyrus, monospace;
+  background: repeating-linear-gradient(
+    90deg,
+    ivory 0px,
+    whitesmoke 40px,
+    rgba(245, 245, 245, 0.938) 40px,
+    lightgray 80px
+  );
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 1400px;
+  grid-template-columns: 1fr 800px 1fr;
+  grid-template-rows: 200px 1fr 1fr 200px 100px;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+  "header header header"
+  "espace-vide picture espace-vide-2"
+  "biography biography biography"
+  "quote quote quote"
+  "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background: linear-gradient(45deg, ivory, lightgrey, rgba(245, 245, 245, 0.938));
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0.7;
+}
+
+h1 {
+  font-family: Harrington, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-family: Harrington,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.picture {
+ grid-area: picture;
+ line-height: 3rem;
+ width: 800px;
+ border-radius: 20px;
+}
+
+img {
+ max-width: 100%;
+ display: block;
+ height: auto;
+ margin: 0 auto;
+}
+
+figcaption {
+text-align: center;
+font-size: 2rem;
+}
+
+.biography {
+ grid-area: biography;
+ background: repeating-linear-gradient(
+    90deg,
+    ivory 0px,
+    whitesmoke 40px,
+    rgba(245, 245, 245, 0.938) 40px,
+    lightgray 80px
+  );
+ font-size: 1.5rem;
+ line-height: 3rem;
+ text-align: justify;
+ margin: 0 auto;
+ width: 60em;
+}
+
+.quote {
+ grid-area: quote;
+ background: whitesmoke;
+ font-size: 2rem;
+ text-align: center;
+ 
+}
+
+.footer {
+ grid-area: footer;
+ font-size: 2rem;
+ line-height: 6rem;
+ text-align: center;
+ background: linear-gradient(45deg, ivory, lightgrey, rgba(245, 245, 245, 0.938));
+}
