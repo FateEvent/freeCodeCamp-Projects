@@ -1,46 +1,46 @@
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-    width: 97vw;
+	width: 97vw;
 }
 
 .nav {
-    padding: 0; /* Remove margins */
+	padding: 0; /* Remove margins */
 }
 
 @media (max-width: 1080px) {
-    .nav {
-        display: none;
-    }
+	.nav {
+		display: none;
+	}
 }
 
 .nav li {
-    border: 1px solid rgb(0, 0, 0); /* Add a thin border to each list item */
-    border-radius: 4%;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Add a grey background color */
-    box-shadow: 4px 4px 3px 2px red;
+	border: 1px solid rgb(0, 0, 0); /* Add a thin border to each list item */
+	border-radius: 4%;
+	margin-top: -1px; /* Prevent double borders */
+	background-color: #f6f6f6; /* Add a grey background color */
+	box-shadow: 4px 4px 3px 2px red;
 }
 
 .text-left {
-    padding-left: 4%;
+	padding-left: 4%;
 }
 
 pre {
-    background: lightgrey;
-    font-family: courier, monospace;
-    color: whitesmoke;
-    padding: 0 1%;
+	background: lightgrey;
+	font-family: courier, monospace;
+	color: whitesmoke;
+	padding: 0 1%;
 }
 
 #references ul {
-    padding: 0; /* Remove margins */
-    margin: 0; /* Remove margins */
-    list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove margins */
+	margin: 0; /* Remove margins */
+	list-style-type: none; /* Remove bullets */
 }
